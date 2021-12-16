@@ -18,7 +18,7 @@ Guarda tu respuesta `<TU_NOMBRE>_submission.csv` en la carpeta `pollos_petrel/`.
 este repo, agrega al _phony_ **submissions** la ruta completa de tu respuesta:
 `pollos_petrel/<TU_NOMBRE>_submission.csv`
 
-El _phony_ submissions debería verse así:
+El _phony_ **submissions** debería verse así:
 
 ```
 submissions: \
