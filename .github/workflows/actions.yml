@@ -1,0 +1,22 @@
+name: Evaluate a directory
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+  push:
+    branches:
+      - develop
+      - main
+jobs:
+  actions:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Copia repositorio
+      uses: actions/checkout@v2
+    - name: Construye imagen
+      run: docker build --tag islasgeci/kata_ctf .
+    - name: Make submissions
+      run: docker run --rm --volume ${PWD}:/workdir islasgeci/kata_ctf make submissions
+    - name: Evaluate a directory
+      run: docker run --rm --volume ${PWD}/pollos_petrel:/submissions islasgeci/common_task_framework:latest geci-ctf evaluate examples/pollos_petrel/complete_dataset.csv /submissions --directory
