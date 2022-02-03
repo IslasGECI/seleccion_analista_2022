@@ -1,6 +1,6 @@
-Package: SeleccionPvvc2022
+Package: SeleccionAnalista2022
 Type: Package
-Title: Selección PVVC 2022
+Title: Selección Analista 2022
 Version: 0.1.0
 Authors@R: c(
     person(given = "Ciencia de Datos",
