@@ -1,0 +1,25 @@
+Package: SeleccionPvvc2022
+Type: Package
+Title: Selección PVVC 2022
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Ciencia de Datos",
+           family = "GECI",
+           role = c("aut", "cre", "cph"),
+           email = "ciencia.datos@islas.org.mx"
+           ))
+Description: Selección de estudiante para realizar proyecto de Ciencia de Datos en GECI
+Imports:
+    data.table,
+    MASS,
+    R6,
+    tidyverse
+Suggests:
+    devtools,
+    roxygen2,
+    testthat
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
