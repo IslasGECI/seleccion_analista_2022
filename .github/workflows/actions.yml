@@ -1,4 +1,4 @@
-name: Evaluate a directory
+name: Tests
 on:
   pull_request:
     branches:
@@ -15,8 +15,15 @@ jobs:
     - name: Copia repositorio
       uses: actions/checkout@v2
     - name: Construye imagen
-      run: docker build --tag islasgeci/kata_ctf .
+      run: docker build --tag islasgeci .
     - name: Make submissions
-      run: docker run --rm --volume ${PWD}:/workdir islasgeci/kata_ctf make submissions
+      run: docker run --rm --volume ${PWD}:/workdir islasgeci make submissions
     - name: Evaluate a directory
       run: docker run --rm --volume ${PWD}/pollos_petrel:/submissions islasgeci/common_task_framework:latest geci-ctf evaluate examples/pollos_petrel/complete_dataset.csv /submissions --directory
+    - name: Verifica el formato
+      run: docker run islasgeci make check
+    - name: Corre pruebas y evalúa cobertura
+      run: docker run islasgeci make coverage
+    - name: Evalúa resistencia a mutaciones
+      run: docker run islasgeci make mutants
+
