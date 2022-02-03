@@ -15,9 +15,6 @@ pollos_petrel/example_r_submission.csv: pollos_petrel/example_submission.csv
     submissions \
     tests
 
-clean:
-	rm --force pollos_petrel/example_*_submission.csv
-
 check:
 	R -e "library(styler)" \
 	  -e "resumen <- style_dir('R')" \
@@ -28,8 +25,9 @@ check:
 clean:
 	rm --force --recursive SeleccionAnalista2022.Rcheck
 	rm --force --recursive tests/testthat/_snaps
-	rm --force SeleccionAnalista2022_*.tar.gz
 	rm --force NAMESPACE
+	rm --force SeleccionAnalista2022_*.tar.gz
+	rm --force pollos_petrel/example_*_submission.csv
 
 coverage: setup
 	Rscript tests/testthat/coverage.R
