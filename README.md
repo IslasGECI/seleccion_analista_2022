@@ -1,8 +1,57 @@
-# KATA: Predicción de la edad de pollos de petrel negro a partir de su morfometría
+# Examen de selección
+
+## Predicción de la edad de pollos de petrel negro a partir de su morfometría
 
 Debes estimar la edad (en días) de un conjunto de pollos de petrel negro a partir de su morfometría.
 Someterás tu respuesta como una tabla de dos columnas: la primera columna es el identificador del
-pollo y la segunda columna es la edad estimada.
+pollo y la segunda columna es la edad estimada. Esperamos ver avances graduales en ciclos cortos.
+Nos gustaría que el examen lo resuelvas con muchos _pull requests_ y que cada _pull request_ tenga
+un avance pequeño (menos de 100 líneas). Por lo que te proponemos:
+
+1. Crea un
+   [_fork_](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository)
+   de este repositorio.
+1. Cubre tu código con pruebas
+1. Haz pasar GitHub Actions
+1. Haz múltiples _pull requests_ pequeños (menos de 100 lineas)
+1. Usa GitHub (_issues_ y _pull requests_) como el medio de comunicación principal
+
+Por favor no esperes a terminar el examen para someter tu primer _pull request_. Recuerda que no
+podrás crear ningún _pull request_ hasta que tengas tu
+[_fork_](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository).
+
+## Rúbrica
+
+El objetivo de este examen de selección es evaluar las habilidades para el trabajo colaborativo a
+distancia. Para eso usaremos los siguientes rubros:
+
+- **Capacidad para el trabajo colaborativo a distancia**:
+  - [ ] Uso de Git  (Los mensajes son informativos del porqué, las consignaciones son pequeñas y los
+    nombres de las ramas dan información del objetivo de los cambios)
+  - [ ] Habilidades de comunicación mediante GitHub (_issues_ y _pull requests_: La comunicación es
+    amable, la descripción es clara y da formato utilizando _Markdown_)
+  - [ ] Solicitud de revisiones (Utilización de [las
+    características](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/requesting-a-pull-request-review)
+    de GitHub para indicar que terminó una corrección y que está solicitando una nueva revisión)
+  - [ ] Asimilación de retroalimentación (Las correcciones solicitadas en un _pull request_ ya no se
+    repiten en los siguientes _pull requets_)
+
+- **Buenas prácticas en programación**:
+  - [ ] Código limpio
+  - [ ] Pruebas unitarias
+  - [ ] Refactorización
+
+## Sugerencias
+
+- Estudia estas referencias:
+    - [How to be great at asking coding questions](https://medium.com/@gordon_zhu/how-to-be-great-at-asking-questions-e37be04d0603)
+    - [Guía de estilo de Ciencia de Datos en GECI](https://islas.dev/guia_de_estilo/)
+    - [The pull request author’s guide to getting through code review](https://google.github.io/eng-practices/review/developer/)
+- Crea _pull request_ pequeños; un _pull request_ de 100 líneas es demasiado grande.
+- Se amable, explica el porqué de las cosas, respeta nuestro [código de
+  conducta](https://www.contributor-covenant.org/es/version/2/0/code_of_conduct/), usa lenguaje simple y claro.
+- Comunícate mucho y hazlo mediante GitHub.
+
 
 ## Instrucciones
 
@@ -73,3 +122,12 @@ El equipo ganador será el que obtenga el menor error absoluto medio
 ([MAE](https://en.wikipedia.org/wiki/Mean_absolute_error)). Puedes ver los resultados del concurso
 en [GitHub Actions](https://github.com/IslasGECI/kata_ctf_pollos_petrel_2022/actions) en la sección:
 _Evaluate a directory_.
+
+## Referencias
+
+- [Guía de estilo de Ciencia de Datos en GECI](https://islas.dev/guia_de_estilo/)
+- [How to be great at asking coding questions](https://medium.com/@gordon_zhu/how-to-be-great-at-asking-questions-e37be04d0603)
+- [Revisiones en GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/requesting-a-pull-request-review)
+- [The pull request author’s guide to getting through code review](https://google.github.io/eng-practices/review/developer/)
+- [_Forkeado_ de un repositorio](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
+
