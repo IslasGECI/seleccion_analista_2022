@@ -1,4 +1,4 @@
-[![Tests](https://github.com/IslasGECI/seleccion_analista_2022/actions/workflows/actions.yml/badge.svg)](https://github.com/IslasGECI/seleccion_analista_2022/actions/workflows/actions.yml)
+![logo](https://www.islas.org.mx/img/logo.svg)
 
 # Examen de selección 2022 para Analista de Datos en GECI
 
@@ -133,3 +133,6 @@ de tu modelo en GitHub Actions en la sección _Evaluate a directory_.
 - [The pull request author’s guide to getting through code review](https://google.github.io/eng-practices/review/developer/)
 - [_Forkeado_ de un repositorio](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
 
+---
+
+![logo](https://www.islas.org.mx/img/conservacion_footer.png)
