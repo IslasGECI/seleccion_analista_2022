@@ -25,12 +25,18 @@ endef
     check \
     clean \
     coverage \
+    coverage_python \
+    coverage_r \
     format \
     linter \
     mutants \
     setup \
+    setup_python \
+    setup_r \
     submissions \
-    tests
+    tests \
+    tests_python \
+    tests_r
 
 check:
 	R -e "library(styler)" \
@@ -58,9 +64,13 @@ clean:
 	rm --force coverage.xml
 	rm --force pollos_petrel/example_*_submission.csv
 
-coverage: setup
-	Rscript tests/testthat/coverage.R
+coverage: coverage_python coverage_r
+
+coverage_python: setup_python
 	pytest --cov=${module} --cov-report=term-missing --verbose
+
+coverage_r: setup_r
+	Rscript tests/testthat/coverage.R
 
 format:
 	black --line-length 100 ${module}
@@ -74,13 +84,21 @@ mutants: tests
 	@echo "🙁🏹 No mutation testing on R 👾🎉👾"
 	mutmut run --paths-to-mutate ${module}
 
-setup:
-	R -e "devtools::document()" && \
-	R CMD build . && \
-	R CMD check SeleccionAnalista2022_0.1.0.tar.gz && \
-	R CMD INSTALL SeleccionAnalista2022_0.1.0.tar.gz
+setup: setup_python setup_r
+
+setup_python: clean
 	pip install .
 
-tests:
-	Rscript -e "devtools::test()"
+setup_r: clean
+	R -e "devtools::document()" && \
+    R CMD build . && \
+    R CMD check SeleccionAnalista2022_0.1.0.tar.gz && \
+    R CMD INSTALL SeleccionAnalista2022_0.1.0.tar.gz
+
+tests: tests_python tests_r
+
+tests_python:
 	pytest --verbose
+
+tests_r:
+	Rscript -e "devtools::test()"
