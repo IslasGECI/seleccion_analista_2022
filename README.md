@@ -1,6 +1,4 @@
-<div class="center">
-<img src="https://www.islas.org.mx/img/logo.svg" width="400" />
-</div>
+<img src="https://www.islas.org.mx/img/logo.svg" width="300" />
 
 # Examen de selección 2022 para Analista de Datos en GECI
 
