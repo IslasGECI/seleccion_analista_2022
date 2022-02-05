@@ -1,4 +1,4 @@
-# Examen de selección
+# Examen de selección 2022 para Analista de Datos en GECI
 
 ## Predicción de la edad de pollos de petrel negro a partir de su morfometría
 
