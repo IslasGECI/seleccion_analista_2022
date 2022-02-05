@@ -1,6 +1,7 @@
 # Examen de selección 2022 para Analista de Datos en GECI
 
 [![Tests](https://github.com/IslasGECI/seleccion_analista_2022/actions/workflows/actions.yml/badge.svg)](https://github.com/IslasGECI/seleccion_analista_2022/actions/workflows/actions.yml)
+![GECI logo](https://www.islas.org.mx/img/logo.svg | width=400)
 
 ## Predicción de la edad de pollos de petrel negro a partir de su morfometría
 
