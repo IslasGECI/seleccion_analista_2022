@@ -1,5 +1,7 @@
 # Examen de selección 2022 para Analista de Datos en GECI
 
+[![Tests](https://github.com/IslasGECI/seleccion_analista_2022/actions/workflows/actions.yml/badge.svg)](https://github.com/IslasGECI/seleccion_analista_2022/actions/workflows/actions.yml)
+
 ## Predicción de la edad de pollos de petrel negro a partir de su morfometría
 
 Debes estimar la edad (en días) de un conjunto de pollos de petrel negro a partir de su morfometría.
