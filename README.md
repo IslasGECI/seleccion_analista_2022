@@ -1,8 +1,8 @@
-<img src="https://www.islas.org.mx/img/logo.svg" width="512" />
+[![Tests](https://github.com/IslasGECI/seleccion_analista_2022/actions/workflows/actions.yml/badge.svg)](https://github.com/IslasGECI/seleccion_analista_2022/actions/workflows/actions.yml)
 
 # Examen de selección 2022 para Analista de Datos en GECI
 
-[![Tests](https://github.com/IslasGECI/seleccion_analista_2022/actions/workflows/actions.yml/badge.svg)](https://github.com/IslasGECI/seleccion_analista_2022/actions/workflows/actions.yml)
+<img src="https://www.islas.org.mx/img/logo.svg" width="512" />
 
 ## Predicción de la edad de pollos de petrel negro a partir de su morfometría
 
