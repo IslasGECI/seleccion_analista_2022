@@ -9,4 +9,4 @@ classifiers = [ "License :: OSI Approved :: GNU General Public License v3 or lat
 description-file = "README.md"
 home-page = "https://github.com/IslasGECI/seleccion_analista_2022"
 module = "pollos_petrel"
-requires-python=">=3.9"
+requires-python=">=3.8"
