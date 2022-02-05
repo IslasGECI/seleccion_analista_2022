@@ -1,6 +1,4 @@
-![logo](https://www.islas.org.mx/img/logo.svg)
-
-# Examen de selección 2022 para Analista de Datos en GECI
+# Examen de selección 2022 para Analista de Datos en GECI ![logo](https://www.islas.org.mx/img/conservacion_footer.png)
 
 <img src="https://www.islas.org.mx/img/logo.svg" width="512" />
 
@@ -135,4 +133,3 @@ de tu modelo en GitHub Actions en la sección _Evaluate a directory_.
 
 ---
 
-![logo](https://www.islas.org.mx/img/conservacion_footer.png)
