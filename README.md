@@ -6,14 +6,14 @@ Debes estimar la edad (en días) de un conjunto de pollos de petrel negro a part
 Someterás tu respuesta como una tabla de dos columnas: la primera columna es el identificador del
 pollo y la segunda columna es la edad estimada. Esperamos ver avances graduales en ciclos cortos.
 Nos gustaría que el examen lo resuelvas con muchos _pull requests_ y que cada _pull request_ tenga
-un avance pequeño (menos de 100 líneas). Por lo que te proponemos:
+un avance muy pequeño (menos de 100 líneas). Por lo que te proponemos:
 
 1. Crea un
    [_fork_](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository)
-   de este repositorio.
+   de este repositorio
 1. Cubre tu código con pruebas
 1. Haz pasar GitHub Actions
-1. Haz múltiples _pull requests_ pequeños (menos de 100 lineas)
+1. Haz múltiples _pull requests_ pequeños (menos de 100 lineas cada uno)
 1. Usa GitHub (_issues_ y _pull requests_) como el medio de comunicación principal
 
 Por favor no esperes a terminar el examen para someter tu primer _pull request_. Recuerda que no
@@ -26,15 +26,15 @@ El objetivo de este examen de selección es evaluar las habilidades para el trab
 distancia. Para eso usaremos los siguientes rubros:
 
 - **Capacidad para el trabajo colaborativo a distancia**:
-  - [ ] Uso de Git  (Los mensajes son informativos del porqué, las consignaciones son pequeñas y los
-    nombres de las ramas dan información del objetivo de los cambios)
-  - [ ] Habilidades de comunicación mediante GitHub (_issues_ y _pull requests_: La comunicación es
-    amable, la descripción es clara y da formato utilizando _Markdown_)
-  - [ ] Solicitud de revisiones (Utilización de [las
+  - [ ] Uso de Git: Los mensajes son informativos del porqué, las consignaciones son pequeñas y los
+    nombres de las ramas dan información del objetivo de los cambios
+  - [ ] Habilidades de comunicación mediante GitHub (_issues_ y _pull requests_): La comunicación es
+    amable, la descripción es clara y da formato utilizando _Markdown_
+  - [ ] Solicitud de revisiones: Utilización de [las
     características](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/requesting-a-pull-request-review)
-    de GitHub para indicar que terminó una corrección y que está solicitando una nueva revisión)
-  - [ ] Asimilación de retroalimentación (Las correcciones solicitadas en un _pull request_ ya no se
-    repiten en los siguientes _pull requets_)
+    de GitHub para indicar que treminó una corrección y que está solicitando una nueva revisión
+  - [ ] Asimilación de retroalimentación: Las correcciones solicitadas en un _pull request_ ya no se
+    repiten en los siguientes _pull requets_
 
 - **Buenas prácticas en programación**:
   - [ ] Código limpio
@@ -71,8 +71,8 @@ El _phony_ **submissions** debería verse así:
 
 ```
 submissions: \
-    pollos_petrel/evaro_01_submission.csv \
-    pollos_petrel/evaro_02_submission.csv \
+    pollos_petrel/example_python_submission.csv \
+    pollos_petrel/example_r_submission.csv \
     pollos_petrel/<OTRO_NOMBRE>_submission.csv \
     pollos_petrel/<TU_NOMBRE>_submission.csv
 ```
@@ -96,11 +96,9 @@ Ejemplo:
   (`pollos_petrel/<TU_NOMBRE>_submission.csv`) a paritr de los datos `test.csv`. Todo el código debe
   correr dentro del contenedor. No se vale consignar la respuesta o números mágicos. Sólo puedes
   consignar código.
-- Todas las y los participantes consignaran su código en este repositorio. Debes consignar y pushar
-  por lo menos una vez por hora. El resto de los equipos podrán inspirarse en tu código y tú te
-  podrás inspirar en el código del resto de los equipos.
-- No puedes consultar la base de datos original (la cual se encuentra en otro repositorio _behind
-  the wall_). No se vale sobreajustar con los datos _behind the wall_.
+- Este es un examen individual. Sólo le puedes pedir ayuda a las y los miembros de Ciencia de Datos
+  en GECI. Si no puedes resolver el examen entonces no puedes cumplir con las responsabilidades del
+  puesto ofertado. No copies.
 
 ## Descripción de las tablas
 En el directorio `pollos_petrel/` puedes encontrar tres archivos CSV.
@@ -112,16 +110,16 @@ En el directorio `pollos_petrel/` puedes encontrar tres archivos CSV.
 ## Descripción de los campos de las tablas
 - En todas las tablas, la primera columna se llama **id** y contiene un identificador único para
   cada registro.
-- En todas las tablas excepto `test.csv`, la última columna se llama **target** y contiene la edad
-  (en días) de los pollos. Esta columna representa la _respuesta_.
+- En las tablas `train.csv` y `example_submission.csv`, la última columna se llama **target** y
+  contiene la edad (en días) de los pollos. Esta columna representa la _respuesta_.
 - En las tablas `test.csv` y `train.csv`, el resto de las columnas ( **Masa**, **Longitud_tarso**,
   ..., **Longitud_pluma_exterior_de_la_cola**) son las variables _predictivas_.
 
 ## Resultados
-El equipo ganador será el que obtenga el menor error absoluto medio
-([MAE](https://en.wikipedia.org/wiki/Mean_absolute_error)). Puedes ver los resultados del concurso
-en [GitHub Actions](https://github.com/IslasGECI/kata_ctf_pollos_petrel_2022/actions) en la sección:
-_Evaluate a directory_.
+
+Te recomendamos que somentas al menos dos modelos. El mejor modelo es el que obtenga el menor error
+absoluto medio ([MAE](https://en.wikipedia.org/wiki/Mean_absolute_error)). Puedes ver los resultados
+de tu modelo en GitHub Actions en la sección _Evaluate a directory_.
 
 ## Referencias
 
