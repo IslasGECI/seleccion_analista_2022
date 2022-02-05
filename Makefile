@@ -30,6 +30,8 @@ endef
     format \
     linter \
     mutants \
+    mutants_python \
+    mutants_r \
     setup \
     setup_python \
     setup_r \
@@ -80,9 +82,13 @@ linter:
 	$(call lint, ${module})
 	$(call lint, tests)
 
-mutants: tests
-	@echo "🙁🏹 No mutation testing on R 👾🎉👾"
+mutants: mutants_python mutants_r
+
+mutants_python: setup_python tests_python
 	mutmut run --paths-to-mutate ${module}
+
+mutants_r: setup_r tests_r
+	@echo "🙁🏹 No mutation testing on R 👾🎉👾"
 
 setup: setup_python setup_r
 
