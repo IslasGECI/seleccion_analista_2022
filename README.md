@@ -2,6 +2,7 @@
 
 # Examen de selección 2022 para Analista de Datos en GECI
 
+- [Ver convocatoria](https://www.facebook.com/IslasGECI/posts/3250808525199345)
 
 ## Predicción de la edad de pollos de petrel negro a partir de su morfometría
 
