@@ -27,7 +27,6 @@ def test_read_testing_dataset():
     assert expected_n_rows == obtained_n_rows
 
 
-
 # Tira todas las columnas excepto id
 # Agrega columna target con el promedio
 # Guarda el archivo con sufijo _submission.csv

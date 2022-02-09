@@ -16,7 +16,9 @@ def get_mean_target(dataset: pd.DataFrame) -> float:
 
 # Lee test.csv
 def read_testing_dataset():
-    pass
+    testing_dataset_path = "pollos_petrel/test.csv"
+    testing_dataset = pd.read_csv(testing_dataset_path)
+    return testing_dataset
 
 
 # Tira todas las columnas excepto id
