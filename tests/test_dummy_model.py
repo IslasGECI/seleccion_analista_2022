@@ -45,7 +45,12 @@ def test_drop_all_but_id():
 
 # Agrega columna target con el promedio
 def test_add_mean_as_target():
-    add_mean_as_target()
+    data = {"id": [1, 2]}
+    dataset = pd.DataFrame(data=data)
+    dataset_with_target = add_mean_as_target(dataset)
+    obtained_columns = list(dataset_with_target.columns)
+    expected_columns = ["id","target"]
+    assert expected_columns == obtained_columns
 
 
 # Guarda el archivo con sufijo _submission.csv
