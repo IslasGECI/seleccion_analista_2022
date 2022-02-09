@@ -51,6 +51,9 @@ def test_add_mean_as_target():
     obtained_columns = list(dataset_with_target.columns)
     expected_columns = ["id","target"]
     assert expected_columns == obtained_columns
+    obtained_target = dataset_with_target["target"][1]
+    expected_target = 57.7687932359723
+    assert expected_target == obtained_target
 
 
 # Guarda el archivo con sufijo _submission.csv
