@@ -22,8 +22,10 @@ def read_testing_dataset():
 
 
 # Tira todas las columnas excepto id
-def drop_all_but_id():
-    pass
+def drop_all_but_id(dataset: pd.DataFrame) -> float:
+    dataset_only_id = dataset[["id"]]
+    return dataset_only_id
+
 
 # Agrega columna target con el promedio
 # Guarda el archivo con sufijo _submission.csv

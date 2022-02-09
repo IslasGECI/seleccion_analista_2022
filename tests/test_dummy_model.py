@@ -37,7 +37,7 @@ def test_drop_all_but_id():
     data = {"id": [1, 2], "target": [3, 4]}
     dataset = pd.DataFrame(data=data)
     dataset_only_id = drop_all_but_id(dataset)
-    obtained_columns = list(dataset_only_id)
+    obtained_columns = list(dataset_only_id.columns)
     expected_columns = ["id"]
     assert expected_columns == obtained_columns
 
