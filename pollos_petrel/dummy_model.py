@@ -9,6 +9,10 @@ def read_trainig_dataset():
 
 
 # Calcula promedio de target
+def get_mean_target():
+    pass
+
+
 # Lee test.csv
 # Tira todas las columnas excepto id
 # Agrega columna target con el promedio
