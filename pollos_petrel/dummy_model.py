@@ -9,8 +9,9 @@ def read_trainig_dataset():
 
 
 # Calcula promedio de target
-def get_mean_target():
-    pass
+def get_mean_target(dataset: pd.DataFrame) -> float:
+    mean_target = dataset["target"].mean()
+    return mean_target
 
 
 # Lee test.csv
