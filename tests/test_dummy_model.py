@@ -34,7 +34,12 @@ def test_read_testing_dataset():
 
 # Tira todas las columnas excepto id
 def test_drop_all_but_id():
-    drop_all_but_id()
+    data = {"id": [1, 2], "target": [3, 4]}
+    dataset = pd.DataFrame(data=data)
+    dataset_only_id = drop_all_but_id(dataset)
+    obtained_columns = list(dataset_only_id)
+    expected_columns = ["id"]
+    assert expected_columns == obtained_columns
 
 
 # Agrega columna target con el promedio
