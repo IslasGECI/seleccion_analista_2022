@@ -1,4 +1,8 @@
 # Lee train.csv
+def read_trainig_dataset():
+    pass
+
+
 # Calcula promedio de target
 # Lee test.csv
 # Tira todas las columnas excepto id
