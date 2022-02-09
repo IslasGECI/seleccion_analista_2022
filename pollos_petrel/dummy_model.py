@@ -2,7 +2,7 @@ import pandas as pd
 
 
 # Lee train.csv
-def read_trainig_dataset():
+def read_training_dataset():
     training_dataset_path = "pollos_petrel/train.csv"
     training_dataset = pd.read_csv(training_dataset_path)
     return training_dataset
