@@ -8,6 +8,7 @@ def test_read_training_dataset():
     expected_n_rows = 1304
     assert expected_n_rows == obtained_n_rows
 
+
 # Calcula promedio de target
 # Lee test.csv
 # Tira todas las columnas excepto id
