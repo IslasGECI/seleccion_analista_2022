@@ -15,6 +15,10 @@ def get_mean_target(dataset: pd.DataFrame) -> float:
 
 
 # Lee test.csv
+def read_testing_dataset():
+    pass
+
+
 # Tira todas las columnas excepto id
 # Agrega columna target con el promedio
 # Guarda el archivo con sufijo _submission.csv
