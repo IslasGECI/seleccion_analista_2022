@@ -1,2 +1,2 @@
-def add_offset(augend: int, addend: int) -> int:
-    return augend + addend
+def return_one() -> int:
+    return 1
