@@ -1,8 +1,9 @@
 from pollos_petrel import (
+    add_mean_as_target,
     drop_all_but_id,
     get_mean_target,
-    read_training_dataset,
     read_testing_dataset,
+    read_training_dataset,
 )
 import pandas as pd
 
@@ -43,4 +44,8 @@ def test_drop_all_but_id():
 
 
 # Agrega columna target con el promedio
+def test_add_mean_as_target():
+    add_mean_as_target()
+
+
 # Guarda el archivo con sufijo _submission.csv
