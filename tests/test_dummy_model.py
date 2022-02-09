@@ -21,7 +21,11 @@ def test_get_mean_target():
 
 # Lee test.csv
 def test_read_testing_dataset():
-    read_testing_dataset()
+    testing_dataset = read_testing_dataset()
+    obtained_n_rows = testing_dataset.shape[0]
+    expected_n_rows = 326
+    assert expected_n_rows == obtained_n_rows
+
 
 
 # Tira todas las columnas excepto id
