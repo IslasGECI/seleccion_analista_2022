@@ -28,4 +28,7 @@ def drop_all_but_id(dataset: pd.DataFrame) -> float:
 
 
 # Agrega columna target con el promedio
+def add_mean_as_target():
+    pass
+
 # Guarda el archivo con sufijo _submission.csv
