@@ -93,7 +93,7 @@ mutants_r: setup_r tests_r
 setup: setup_python setup_r
 
 setup_python: clean
-	pip install .
+	pip install --editable .
 
 setup_r: clean
 	R -e "devtools::document()" && \

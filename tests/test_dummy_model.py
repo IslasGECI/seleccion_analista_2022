@@ -1,4 +1,4 @@
-from ..pollos_petrel import read_trainig_dataset
+from pollos_petrel import read_trainig_dataset
 
 
 # Lee train.csv
