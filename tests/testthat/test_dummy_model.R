@@ -60,7 +60,7 @@ describe("Add mean as target", {
 describe("Write submission", {
   it("writes a csv file", {
     submission_path <- "pollos_petrel/example_r_submission.csv"
-    if(file.exists(submission_path)) {
+    if (file.exists(submission_path)) {
       file.remove(submission_path)
     }
     expect_false(file.exists(submission_path))
