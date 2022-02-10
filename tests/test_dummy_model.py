@@ -6,6 +6,7 @@ from pollos_petrel import (
     read_training_dataset,
     write_submission,
 )
+import os
 import pandas as pd
 
 
@@ -54,4 +55,9 @@ def test_add_mean_as_target():
 
 # Guarda el archivo con sufijo _submission.csv
 def test_write_submission():
+    submission_path = "pollos_petrel/example_python_submission.csv"
+    if os.path.exists(submission_path):
+        os.remove(submission_path)
     write_submission()
+    assert os.path.exists(submission_path)
+    os.remove(submission_path)
