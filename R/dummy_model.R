@@ -7,6 +7,12 @@ read_training_dataset <- function() {
 }
 
 
+get_target_mean <- function(dataset) {
+  mean_target <- mean(dataset$target)
+  return(mean_target)
+}
+
+
 read_testing_dataset <- function() {
   testing_dataset_path <- "pollos_petrel/test.csv"
   testing_dataset <- read_csv(testing_dataset_path)
