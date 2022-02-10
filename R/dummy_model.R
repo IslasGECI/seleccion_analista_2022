@@ -34,3 +34,10 @@ add_mean_as_target <- function() {
   submission["target"] <- target_mean
   return(submission)
 }
+
+
+write_submission <- function() {
+  submission_path <- "pollos_petrel/example_r_submission.csv"
+  submission <- add_mean_as_target()
+  write_csv(submission, submission_path)
+}
