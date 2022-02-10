@@ -18,3 +18,9 @@ read_testing_dataset <- function() {
   testing_dataset <- read_csv(testing_dataset_path)
   return(testing_dataset)
 }
+
+
+drop_all_but_id <- function(dataset) {
+  dataset_only_id <- dataset["id"]
+  return(dataset_only_id)
+}
