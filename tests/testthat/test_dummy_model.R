@@ -35,7 +35,7 @@ describe("Read testing dataset", {
 
 # Tira todas las columnas excepto id
 describe("Drop all columns except id", {
-  it("has only one column and is named id", {
+  it("has only one column and it is named id", {
     dataset <- tibble(id = 1:2, target = 3:4)
     dataset_only_id <- drop_all_but_id(dataset)
     obtained_columns <- colnames(dataset_only_id)
@@ -46,4 +46,14 @@ describe("Drop all columns except id", {
 
 
 # Agrega columna target con el promedio
+describe("Add mean as target", {
+  it("contains the mean on each row of the target", {
+    submission_with_mean_as_target <- add_mean_as_target()
+    obtained_target <- submission_with_mean_as_target$target[2]
+    expected_target <- 34.67101226993865
+    expect_equal(expected_target, obtained_target)
+  })
+})
+
+
 # Guarda el archivo con sufijo _submission.csv
