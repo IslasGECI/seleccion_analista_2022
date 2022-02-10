@@ -44,10 +44,6 @@ check:
 	R -e "library(styler)" \
       -e "resumen <- style_dir('R')" \
       -e "resumen <- rbind(resumen, style_dir('tests'))" \
-      -e "print(resumen)"
-	R -e "library(styler)" \
-      -e "resumen <- style_dir('R')" \
-      -e "resumen <- rbind(resumen, style_dir('tests'))" \
       -e "any(resumen[[2]])" \
       | grep FALSE
 	black --check --line-length 100 ${module}
