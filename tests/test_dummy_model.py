@@ -1,7 +1,7 @@
 from pollos_petrel import (
     add_mean_as_target,
     drop_all_but_id,
-    get_mean_target,
+    get_target_mean,
     read_testing_dataset,
     read_training_dataset,
 )
@@ -17,10 +17,10 @@ def test_read_training_dataset():
 
 
 # Calcula promedio de target
-def test_get_mean_target():
+def test_get_target_mean():
     data = {"id": [1, 2], "target": [3, 4]}
     dataset = pd.DataFrame(data=data)
-    obtained_mean = get_mean_target(dataset)
+    obtained_mean = get_target_mean(dataset)
     expected_mean = 3.5
     assert expected_mean == obtained_mean
 
@@ -45,14 +45,9 @@ def test_drop_all_but_id():
 
 # Agrega columna target con el promedio
 def test_add_mean_as_target():
-    data = {"id": [1, 2]}
-    dataset = pd.DataFrame(data=data)
-    dataset_with_target = add_mean_as_target(dataset)
-    obtained_columns = list(dataset_with_target.columns)
-    expected_columns = ["id","target"]
-    assert expected_columns == obtained_columns
-    obtained_target = dataset_with_target["target"][1]
-    expected_target = 57.7687932359723
+    submission_with_mean_as_target = add_mean_as_target()
+    obtained_target = submission_with_mean_as_target["target"][1]
+    expected_target = 34.67101226993865
     assert expected_target == obtained_target
 
 
