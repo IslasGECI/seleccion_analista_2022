@@ -1,5 +1,3 @@
-library(tidyverse)
-
 read_training_dataset <- function() {
   training_dataset_path <- "pollos_petrel/train.csv"
   training_dataset <- read_csv(training_dataset_path)
@@ -36,6 +34,7 @@ add_mean_as_target <- function() {
 }
 
 
+#' @export
 write_submission <- function() {
   submission_path <- "pollos_petrel/example_r_submission.csv"
   submission <- add_mean_as_target()
