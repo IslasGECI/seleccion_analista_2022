@@ -12,6 +12,16 @@ describe("Read training dataset", {
 
 
 # Calcula promedio de target
+describe("Get target mean", {
+  it("calculate mean of two numbers", {
+    dataset <- tibble(id = 1:2, target = 3:4)
+    obtained_mean <- get_target_mean(dataset)
+    expected_mean <- 3.5
+    expect_equal(expected_mean, obtained_mean)
+  })
+})
+
+
 # Lee test.csv
 describe("Read testing dataset", {
   it("reads all 326 records", {
