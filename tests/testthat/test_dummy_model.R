@@ -57,3 +57,15 @@ describe("Add mean as target", {
 
 
 # Guarda el archivo con sufijo _submission.csv
+describe("Write submission", {
+  it("writes a csv file", {
+    submission_path <- "pollos_petrel/example_r_submission.csv"
+    if(file.exists(submission_path)) {
+      file.remove(submission_path)
+    }
+    expect_false(file.exists(submission_path))
+    write_submission()
+    expect_true(file.exists(submission_path))
+    file.remove(submission_path)
+  })
+})
