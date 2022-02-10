@@ -4,6 +4,7 @@ from pollos_petrel import (
     get_target_mean,
     read_testing_dataset,
     read_training_dataset,
+    write_submission,
 )
 import pandas as pd
 
@@ -52,3 +53,5 @@ def test_add_mean_as_target():
 
 
 # Guarda el archivo con sufijo _submission.csv
+def test_write_submission():
+    write_submission()
