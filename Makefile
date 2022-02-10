@@ -6,9 +6,9 @@ pollos_petrel/example_python_submission.csv: setup_python src/example_submission
 	@echo "Creating Python submission..."
 	src/example_submission.py
 
-pollos_petrel/example_r_submission.csv: pollos_petrel/example_submission.csv
+pollos_petrel/example_r_submission.csv: setup_r src/example_submission.R
 	@echo "Creating R submission..."
-	cp pollos_petrel/example_submission.csv $@
+	src/example_submission.R
 
 module = pollos_petrel
 
@@ -43,6 +43,7 @@ endef
 check:
 	R -e "library(styler)" \
       -e "resumen <- style_dir('R')" \
+      -e "resumen <- rbind(resumen, style_dir('src'))" \
       -e "resumen <- rbind(resumen, style_dir('tests'))" \
       -e "any(resumen[[2]])" \
       | grep FALSE
