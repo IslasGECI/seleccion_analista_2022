@@ -2,9 +2,9 @@ submissions: \
     pollos_petrel/example_python_submission.csv \
     pollos_petrel/example_r_submission.csv
 
-pollos_petrel/example_python_submission.csv: pollos_petrel/example_submission.csv
+pollos_petrel/example_python_submission.csv: setup_python src/example_submission.py
 	@echo "Creating Python submission..."
-	cp pollos_petrel/example_submission.csv $@
+	src/example_submission.py
 
 pollos_petrel/example_r_submission.csv: pollos_petrel/example_submission.csv
 	@echo "Creating R submission..."
@@ -47,10 +47,13 @@ check:
       -e "any(resumen[[2]])" \
       | grep FALSE
 	black --check --line-length 100 ${module}
+	black --check --line-length 100 src
 	black --check --line-length 100 tests
 	flake8 --max-line-length 100 ${module}
+	flake8 --max-line-length 100 src
 	flake8 --max-line-length 100 tests
 	mypy ${module}
+	mypy src
 	mypy tests
 
 clean:
@@ -76,6 +79,7 @@ coverage_r: setup_r
 
 format:
 	black --line-length 100 ${module}
+	black --line-length 100 src
 	black --line-length 100 tests
 
 linter:
@@ -86,6 +90,7 @@ mutants: mutants_python mutants_r
 
 mutants_python: setup_python tests_python
 	mutmut run --paths-to-mutate ${module}
+	mutmut run --paths-to-mutate src
 
 mutants_r: setup_r tests_r
 	@echo "🙁🏹 No mutation testing on R 👾🎉👾"
@@ -93,7 +98,7 @@ mutants_r: setup_r tests_r
 setup: setup_python setup_r
 
 setup_python: clean
-	pip install .
+	pip install --editable .
 
 setup_r: clean
 	R -e "devtools::document()" && \
