@@ -38,3 +38,5 @@ def add_mean_as_target() -> pd.DataFrame:
 
 
 # Guarda el archivo con sufijo _submission.csv
+def write_submission():
+    pass
