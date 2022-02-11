@@ -48,8 +48,8 @@ distancia. Para eso usaremos los siguientes rubros:
 ## Sugerencias
 
 - Estudia estas referencias:
-    - [How to be great at asking coding questions](https://medium.com/@gordon_zhu/how-to-be-great-at-asking-questions-e37be04d0603)
     - [Guía de estilo de Ciencia de Datos en GECI](https://islas.dev/guia_de_estilo/)
+    - [How to Make Your Code Reviewer Fall in Love with You](https://mtlynch.io/code-review-love/)
     - [The pull request author’s guide to getting through code review](https://google.github.io/eng-practices/review/developer/)
 - Crea _pull request_ pequeños; un _pull request_ de 100 líneas es demasiado grande.
 - Se amable, explica el porqué de las cosas, respeta nuestro [código de
@@ -128,7 +128,7 @@ de tu modelo en GitHub Actions en la sección _Evaluate a directory_.
 ## Referencias
 
 - [Guía de estilo de Ciencia de Datos en GECI](https://islas.dev/guia_de_estilo/)
-- [How to be great at asking coding questions](https://medium.com/@gordon_zhu/how-to-be-great-at-asking-questions-e37be04d0603)
+- [How to Make Your Code Reviewer Fall in Love with You](https://mtlynch.io/code-review-love/)
 - [Revisiones en GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/requesting-a-pull-request-review)
 - [The pull request author’s guide to getting through code review](https://google.github.io/eng-practices/review/developer/)
 - [_Forkeado_ de un repositorio](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
