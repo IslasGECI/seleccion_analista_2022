@@ -21,7 +21,7 @@ read_testing_dataset <- function() {
 
 
 drop_all_but_id <- function(dataset) {
-  dataset_only_id <- dataset["id"]
+  dataset_only_id <- dataset %>% select("id")
   return(dataset_only_id)
 }
 
