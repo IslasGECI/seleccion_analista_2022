@@ -4,7 +4,7 @@ setwd("/workdir")
 describe("Read training dataset", {
   it("reads all 1304 records", {
     training_dataset <- read_training_dataset()
-    obtained_n_rows <- dim(training_dataset)[1]
+    obtained_n_rows <- nrow(training_dataset)
     expected_n_rows <- 1304
     expect_equal(expected_n_rows, obtained_n_rows)
   })
@@ -26,7 +26,7 @@ describe("Get target mean", {
 describe("Read testing dataset", {
   it("reads all 326 records", {
     testing_dataset <- read_testing_dataset()
-    obtained_n_rows <- dim(testing_dataset)[1]
+    obtained_n_rows <- nrow(testing_dataset)
     expected_n_rows <- 326
     expect_equal(expected_n_rows, obtained_n_rows)
   })
