@@ -1,5 +1,6 @@
 setwd("/workdir")
 
+dataset <- tibble(id = 1:2, target = 3:4)
 # Lee train.csv
 describe("Read training dataset", {
   it("reads all 1304 records", {
@@ -14,7 +15,6 @@ describe("Read training dataset", {
 # Calcula promedio de target
 describe("Get target mean", {
   it("calculate mean of two numbers", {
-    dataset <- tibble(id = 1:2, target = 3:4)
     obtained_mean <- get_target_mean(dataset)
     expected_mean <- 3.5
     expect_equal(expected_mean, obtained_mean)
@@ -36,7 +36,6 @@ describe("Read testing dataset", {
 # Tira todas las columnas excepto id
 describe("Drop all columns except id", {
   it("has only one column and it is named id", {
-    dataset <- tibble(id = 1:2, target = 3:4)
     dataset_only_id <- drop_all_but_id(dataset)
     obtained_columns <- colnames(dataset_only_id)
     expected_columns <- "id"
