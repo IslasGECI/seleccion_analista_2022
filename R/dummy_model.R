@@ -30,8 +30,8 @@ add_mean_as_target <- function() {
   training_dataset <- read_training_dataset()
   target_mean <- get_target_mean(training_dataset)
   testing_dataset <- read_testing_dataset()
-  submission <- drop_all_but_id(testing_dataset)
-  submission["target"] <- target_mean
+  submission <- drop_all_but_id(testing_dataset) %>%
+    mutate("target" = target_mean)
   return(submission)
 }
 
