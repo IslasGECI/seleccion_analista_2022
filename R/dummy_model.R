@@ -1,3 +1,4 @@
+library(tidyverse)
 
 read_training_dataset <- function() {
   training_dataset_path <- "pollos_petrel/train.csv"
