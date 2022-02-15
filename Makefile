@@ -113,4 +113,4 @@ tests_python:
 	pytest --verbose
 
 tests_r:
-	Rscript -e "devtools::test()"
+	Rscript -e "devtools::test(stop_on_failure = TRUE)"
