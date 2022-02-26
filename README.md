@@ -17,7 +17,7 @@ un avance muy pequeño (menos de 100 líneas). Por lo que te proponemos:
    de este repositorio
 1. Cubre tu código con pruebas
 1. Haz pasar GitHub Actions
-1. Haz múltiples _pull requests_ pequeños (menos de 100 lineas cada uno)
+1. Haz múltiples _pull requests_ pequeños (menos de 100 líneas cada uno)
 1. Usa GitHub (_issues_ y _pull requests_) como el medio de comunicación principal
 
 Por favor no esperes a terminar el examen para someter tu primer _pull request_. Recuerda que no
@@ -36,9 +36,9 @@ distancia. Para eso usaremos los siguientes rubros:
     amable, la descripción es clara y da formato utilizando _Markdown_
   - [ ] Solicitud de revisiones: Utilización de [las
     características](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/requesting-a-pull-request-review)
-    de GitHub para indicar que treminó una corrección y que está solicitando una nueva revisión
+    de GitHub para indicar que terminó una corrección y que está solicitando una nueva revisión
   - [ ] Asimilación de retroalimentación: Las correcciones solicitadas en un _pull request_ ya no se
-    repiten en los siguientes _pull requets_
+    repiten en los siguientes _pull requests_
 
 - **Buenas prácticas en programación**:
   - [ ] Código limpio
@@ -97,7 +97,7 @@ Ejemplo:
 ## Reglas
 
 - El comando `make pollos_petrel/<TU_NOMBRE>_submission.csv` debe reproducir tu respuesta
-  (`pollos_petrel/<TU_NOMBRE>_submission.csv`) a paritr de los datos `test.csv`. Todo el código debe
+  (`pollos_petrel/<TU_NOMBRE>_submission.csv`) a partir de los datos `test.csv`. Todo el código debe
   correr dentro del contenedor. No se vale consignar la respuesta o números mágicos. Sólo puedes
   consignar código.
 - Este es un examen individual. Sólo le puedes pedir ayuda a las y los miembros de Ciencia de Datos
@@ -121,7 +121,7 @@ En el directorio `pollos_petrel/` puedes encontrar tres archivos CSV.
 
 ## Resultados
 
-Te recomendamos que somentas al menos dos modelos. El mejor modelo es el que obtenga el menor error
+Te recomendamos que sometas al menos dos modelos. El mejor modelo es el que obtenga el menor error
 absoluto medio ([MAE](https://en.wikipedia.org/wiki/Mean_absolute_error)). Puedes ver los resultados
 de tu modelo en GitHub Actions en la sección _Evaluate a directory_.
 
