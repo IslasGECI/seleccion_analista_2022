@@ -51,7 +51,7 @@ distancia. Para eso usaremos los siguientes rubros:
     - [Guía de estilo de Ciencia de Datos en GECI](https://islas.dev/guia_de_estilo/)
     - [How to Make Your Code Reviewer Fall in Love with You](https://mtlynch.io/code-review-love/)
     - [The pull request author’s guide to getting through code review](https://google.github.io/eng-practices/review/developer/)
-- Crea _pull request_ pequeños; un _pull request_ de 100 líneas es demasiado grande.
+- Crea _pull requests_ pequeños; un _pull request_ de 100 líneas es demasiado grande.
 - Se amable, explica el porqué de las cosas, respeta nuestro [código de
   conducta](https://www.contributor-covenant.org/es/version/2/0/code_of_conduct/), usa lenguaje simple y claro.
 - Comunícate mucho y hazlo mediante GitHub.
