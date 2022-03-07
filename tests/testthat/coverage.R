@@ -1,5 +1,4 @@
 library(covr)
-library(testthat)
 cov <- package_coverage()
 report(cov, file = file.path("/workdir/tests/coverage-report.html"), browse = FALSE)
 zero_coverage(cov)
