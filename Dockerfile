@@ -13,5 +13,5 @@ RUN pip install --upgrade pip && pip install \
     pytest-cov \
     sklearn \
     tensorflow
-RUN Rscript -e "install.packages(c('covr', 'devtools', 'lintr', 'roxygen2', 'styler', 'testthat', 'vdiffr'), repos='http://cran.rstudio.com')"
+RUN Rscript -e "install.packages(c('covr', 'devtools', 'DT', 'lintr', 'roxygen2', 'styler', 'testthat', 'vdiffr'), repos='http://cran.rstudio.com')"
 

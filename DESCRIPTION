@@ -1,25 +1,26 @@
 Package: SeleccionAnalista2022
-Type: Package
 Title: Selección Analista 2022
-Version: 0.1.0
 Authors@R: c(
     person(given = "Ciencia de Datos",
            family = "GECI",
            role = c("aut", "cre", "cph"),
            email = "ciencia.datos@islas.org.mx"
            ))
+Config/testthat/edition: 3
 Description: Selección de estudiante para realizar proyecto de Ciencia de Datos en GECI
+Encoding: UTF-8
 Imports:
     data.table,
     MASS,
     R6,
     tidyverse
+LazyData: true
+License: GPL-3
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
 Suggests:
     devtools,
     roxygen2,
     testthat
-License: GPL-3
-Encoding: UTF-8
-LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+Type: Package
+Version: 0.1.0
