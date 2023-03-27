@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  islasgeci:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: islasgeci/seleccion_analista_2022:latest
+    command: bash
+    volumes:
+      - $PWD:/workdir
