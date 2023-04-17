@@ -22,23 +22,29 @@ define lint
 endef
 
 .PHONY: \
-    check \
-    clean \
-    coverage \
-    coverage_python \
-    coverage_r \
-    format \
-    linter \
-    mutants \
-    mutants_python \
-    mutants_r \
-    setup \
-    setup_python \
-    setup_r \
-    submissions \
-    tests \
-    tests_python \
-    tests_r
+	check \
+	clean \
+	coverage \
+	coverage_python \
+	coverage_r \
+	format \
+	init \
+	init_python \
+	init_r \
+	install_python \
+	install_r \
+	linter \
+	mutants \
+	mutants_python \
+	mutants_r \
+	setup \
+	setup_python \
+	setup_r \
+	submissions \
+	tests \
+	tests_python \
+	tests_r
+
 
 check:
 	R -e "library(styler)" \
@@ -87,6 +93,23 @@ format:
       -e "style_dir('src')" \
       -e "style_dir('tests')"
 
+init:
+	@echo "⛔ Please use 'make init_python' or 'make init_r' instead ⛔"
+
+init_python: setup_python tests_python
+
+init_r: setup_r tests_r
+
+install_python:
+	pip install --editable .
+
+install_r:
+	R -e "devtools::document()" && \
+    R CMD build . && \
+    R CMD check SeleccionAnalista2022_0.1.0.tar.gz && \
+    R CMD INSTALL SeleccionAnalista2022_0.1.0.tar.gz
+
+
 linter:
 	$(call lint, ${module})
 	$(call lint, tests)
@@ -102,14 +125,9 @@ mutants_r: setup_r tests_r
 
 setup: setup_python setup_r
 
-setup_python: clean
-	pip install --editable .
+setup_python: clean install_python
 
-setup_r: clean
-	R -e "devtools::document()" && \
-    R CMD build . && \
-    R CMD check SeleccionAnalista2022_0.1.0.tar.gz && \
-    R CMD INSTALL SeleccionAnalista2022_0.1.0.tar.gz
+setup_r: clean install_r
 
 tests: tests_python tests_r
 
