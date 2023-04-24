@@ -1,4 +1,4 @@
-FROM islasgeci/base:0.7.0
+FROM islasgeci/base:1.0.0
 COPY . /workdir
 RUN apt update && apt install --yes \
     gnuplot
