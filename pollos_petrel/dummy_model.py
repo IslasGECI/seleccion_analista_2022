@@ -3,7 +3,7 @@ import pandas as pd
 
 # Lee train.csv
 def read_training_dataset() -> pd.DataFrame:
-    training_dataset_path = "pollos_petrel/train.csv"
+    training_dataset_path = "/workdir/data/raw/train.csv"
     training_dataset = pd.read_csv(training_dataset_path)
     return training_dataset
 
@@ -16,7 +16,7 @@ def get_target_mean(dataset: pd.DataFrame) -> float:
 
 # Lee test.csv
 def read_testing_dataset() -> pd.DataFrame:
-    testing_dataset_path = "pollos_petrel/test.csv"
+    testing_dataset_path = "/workdir/data/raw/test.csv"
     testing_dataset = pd.read_csv(testing_dataset_path)
     return testing_dataset
 
